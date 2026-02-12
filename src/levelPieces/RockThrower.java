@@ -4,6 +4,8 @@ import gameEngine.Drawable;
 import gameEngine.InteractionResult;
 import gameEngine.Moveable;
 
+import java.util.Random;
+
 public class RockThrower extends GamePiece implements Moveable {
     /**
      * Constructor for the game piece
@@ -16,7 +18,24 @@ public class RockThrower extends GamePiece implements Moveable {
 
     @Override
     public void move(Drawable[] gameBoard, int playerLocation) {
+        boolean isPlayerToLeft =  playerLocation < getLocation();
+        int distance = 1;
 
+        int tempLocation = getLocation();
+        if(isPlayerToLeft) {
+            tempLocation -= distance;
+        }
+        else {
+            tempLocation += distance;
+        }
+
+
+
+        if (gameBoard[tempLocation] == null) {
+            gameBoard[tempLocation] = this;
+            gameBoard[getLocation()] = null;
+            setLocation(tempLocation);
+        }
     }
 
     @Override

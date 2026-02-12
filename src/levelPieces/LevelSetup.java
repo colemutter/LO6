@@ -48,6 +48,10 @@ public class LevelSetup {
 
 
             //Section for rock Throwers
+            RockThrower rockThrower = new RockThrower(19);
+            moveablePieces.add(rockThrower);
+            interactablePieces.add(rockThrower);
+            gameBoard[19] = rockThrower;
 
 
             //prints for rules of items in the level
