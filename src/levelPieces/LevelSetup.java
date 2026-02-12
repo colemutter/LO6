@@ -41,17 +41,19 @@ public class LevelSetup {
 
 
             //Section for Chests
-
+            Chest chest1 = new Chest(9);
+            interactablePieces.add(chest1);
+            gameBoard[9] = chest1;
 
             //Section for Hidden Passage
 
 
 
             //Section for rock Throwers
-            RockThrower rockThrower = new RockThrower(19);
+            RockThrower rockThrower = new RockThrower(7);
             moveablePieces.add(rockThrower);
             interactablePieces.add(rockThrower);
-            gameBoard[19] = rockThrower;
+            gameBoard[7] = rockThrower;
 
 
             //prints for rules of items in the level

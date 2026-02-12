@@ -14,7 +14,7 @@ public class Snake extends GamePiece implements Moveable {
      * @param location initial location
      */
     public Snake( int location) {
-        super('s', "moves randomly and kills player on contact", location);
+        super('s', "Snake - moves randomly and kills player on contact", location);
     }
 
     @Override
@@ -43,6 +43,9 @@ public class Snake extends GamePiece implements Moveable {
 
     @Override
     public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
-        return null;
+        if (playerLocation == getLocation()) {
+            return InteractionResult.KILL;
+        }
+        return InteractionResult.NONE;
     }
 }

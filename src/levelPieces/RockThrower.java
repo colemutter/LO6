@@ -13,7 +13,7 @@ public class RockThrower extends GamePiece implements Moveable {
      * @param location initial location
      */
     public RockThrower( int location) {
-        super('T', "moves toward player and throws rocks two spaces away from it", location);
+        super('T', "Rock Thrower - moves toward player and throws rocks two spaces away from it", location);
     }
 
     @Override
@@ -40,6 +40,9 @@ public class RockThrower extends GamePiece implements Moveable {
 
     @Override
     public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
-        return null;
+        if (Math.abs(playerLocation - getLocation()) <= 2) {
+            return InteractionResult.HIT;
+        }
+        return InteractionResult.NONE;
     }
 }
