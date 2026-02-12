@@ -15,6 +15,10 @@ public class DartTrap extends GamePiece {
 
     @Override
     public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
-        return null;
+        if(playerLocation == getLocation()){
+            return InteractionResult.HIT;
+        }else{
+            return InteractionResult.NONE;
+        }
     }
 }

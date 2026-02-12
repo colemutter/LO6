@@ -15,6 +15,10 @@ public class HiddenPassage extends GamePiece {
 
     @Override
     public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
-        return null;
+        if(playerLocation == getLocation()){
+            return InteractionResult.ADVANCE;
+        }else{
+            return InteractionResult.NONE;
+        }
     }
 }

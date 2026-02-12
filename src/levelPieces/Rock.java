@@ -16,6 +16,6 @@ public class Rock extends GamePiece {
 
     @Override
     public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
-        return null;
+        return InteractionResult.NONE;
     }
 }
