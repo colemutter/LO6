@@ -15,6 +15,10 @@ public class SpikePit extends GamePiece {
 
     @Override
     public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
-        return null;
+        if(playerLocation == getLocation()){
+            return InteractionResult.KILL;
+        }else{
+            return InteractionResult.NONE;
+        }
     }
 }
