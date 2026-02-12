@@ -8,12 +8,10 @@ public class RockThrower extends GamePiece implements Moveable {
     /**
      * Constructor for the game piece
      *
-     * @param symbol   symbol for the game piece
-     * @param label    TODO
      * @param location initial location
      */
-    public RockThrower(char symbol, String label, int location) {
-        super(symbol, label, location);
+    public RockThrower( int location) {
+        super('T', "moves toward player and throws rocks two spaces away from it", location);
     }
 
     @Override

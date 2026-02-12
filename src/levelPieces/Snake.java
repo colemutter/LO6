@@ -8,12 +8,11 @@ public class Snake extends GamePiece implements Moveable {
     /**
      * Constructor for the game piece
      *
-     * @param symbol   symbol for the game piece
-     * @param label    TODO
+     *
      * @param location initial location
      */
-    public Snake(char symbol, String label, int location) {
-        super(symbol, label, location);
+    public Snake( int location) {
+        super('s', "moves randomly and kills player on contact", location);
     }
 
     @Override

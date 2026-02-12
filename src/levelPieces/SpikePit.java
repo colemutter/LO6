@@ -7,12 +7,10 @@ public class SpikePit extends GamePiece {
     /**
      * Constructor for the game piece
      *
-     * @param symbol   symbol for the game piece
-     * @param label    TODO
      * @param location initial location
      */
-    public SpikePit(char symbol, String label, int location) {
-        super(symbol, label, location);
+    public SpikePit(int location) {
+        super('p', "kills player if they fall into it", location);
     }
 
     @Override

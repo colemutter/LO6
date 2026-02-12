@@ -7,12 +7,10 @@ public class HiddenPassage extends GamePiece {
     /**
      * Constructor for the game piece
      *
-     * @param symbol   symbol for the game piece
-     * @param label    TODO
      * @param location initial location
      */
-    public HiddenPassage(char symbol, String label, int location) {
-        super(symbol, label, location);
+    public HiddenPassage( int location) {
+        super('H', "advances player to next level on contact", location);
     }
 
     @Override

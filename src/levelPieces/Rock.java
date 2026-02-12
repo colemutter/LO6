@@ -8,12 +8,10 @@ public class Rock extends GamePiece {
     /**
      * Constructor for the game piece
      *
-     * @param symbol   symbol for the game piece
-     * @param label    TODO
      * @param location initial location
      */
-    public Rock(char symbol, String label, int location) {
-        super(symbol, label, location);
+    public Rock(int location) {
+        super('r', "does nothing", location);
     }
 
     @Override

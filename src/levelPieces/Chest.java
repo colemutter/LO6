@@ -7,12 +7,10 @@ public class Chest extends GamePiece {
     /**
      * Constructor for the game piece
      *
-     * @param symbol   symbol for the game piece
-     * @param label    TODO
      * @param location initial location
      */
-    public Chest(char symbol, String label, int location) {
-        super(symbol, label, location);
+    public Chest( int location) {
+        super('c', "gives player a point", location);
     }
 
     @Override

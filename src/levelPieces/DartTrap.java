@@ -7,12 +7,10 @@ public class DartTrap extends GamePiece {
     /**
      * Constructor for the game piece
      *
-     * @param symbol   symbol for the game piece
-     * @param label    TODO
      * @param location initial location
      */
-    public DartTrap(char symbol, String label, int location) {
-        super(symbol, label, location);
+    public DartTrap(int location) {
+        super('d', "shoots a dart a certain direction to harm the player", location);
     }
 
     @Override

@@ -89,7 +89,7 @@ public class GameEngine {
 	/**
 	 * Display the instructions
 	 * 
-	 * @param gameBoard - board so we know what pieces to display info on
+	 *  - board so we know what pieces to display info on
 	 */
 	private void displayInstructions() {
 		System.out.println("* The Game KerPlop *");
