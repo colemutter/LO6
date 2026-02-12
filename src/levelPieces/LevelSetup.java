@@ -72,22 +72,31 @@ public class LevelSetup {
 
 
             //Section for pits
-
-
+            SpikePit pit1 = new SpikePit(4);
+            interactablePieces.add(pit1);
+            gameBoard[4] = pit1;
 
             //Section for Dart Traps
-
-
+            DartTrap dart1 = new DartTrap(6);
+            interactablePieces.add(dart1);
+            gameBoard[6] = dart1;
 
             //Section for Chests
-
+            Chest chest1 = new Chest(5);
+            interactablePieces.add(chest1);
+            gameBoard[5] = chest1;
 
             //Section for Hidden Passage
-
+            HiddenPassage passage1 = new HiddenPassage(20);
+            interactablePieces.add(passage1);
+            gameBoard[20] = passage1;
 
 
             //Section for rock Throwers
-
+            RockThrower thrower1 = new RockThrower(18);
+            interactablePieces.add(thrower1);
+            moveablePieces.add(thrower1);
+            gameBoard[18] = thrower1;
 
             //prints for rules of items in the level
         }
