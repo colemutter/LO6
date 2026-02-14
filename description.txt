@@ -1,0 +1,9 @@
+Van Nguyen
+Cole mutter
+Maze escape
+
+We added the game piece a total of 7 new classes that implements the required criteria of the assignment.
+The game features an escape from a dungeon type environment with features such as a dart trap and rock thrower
+person that would hit you. Other features includes a snake and spike pit that once encounter would kill you.
+Additionally, to gain points and advane to the next level; the player needs to encounter a chest to get point and
+the hidden passage to advance. The rock is an object that will do nothing!
