@@ -74,6 +74,8 @@ public class LevelSetup {
             playerPosition = 19;
 
             //Rocks that dont do anything
+            gameBoard[2] = new Rock(2);
+            gameBoard[11] = new Rock(11);
 
             //Section for Snakes
             Snake snake1 = new Snake(15);
@@ -98,9 +100,9 @@ public class LevelSetup {
             gameBoard[5] = chest1;
 
             //Section for Hidden Passage
-            HiddenPassage passage1 = new HiddenPassage(20);
+            HiddenPassage passage1 = new HiddenPassage(1);
             interactablePieces.add(passage1);
-            gameBoard[20] = passage1;
+            gameBoard[1] = passage1;
 
 
             //Section for rock Throwers

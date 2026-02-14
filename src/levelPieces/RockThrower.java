@@ -1,3 +1,11 @@
+/**
+ * RockThrower Game Piece.
+ *
+ * @author Cole Mutter
+ * @author Van Nguyen
+ *
+ * Purpose: Create class RockThrower that extends gamepiece and is Interactable and moveable.
+ */
 package levelPieces;
 
 import gameEngine.Drawable;
@@ -16,6 +24,7 @@ public class RockThrower extends GamePiece implements Moveable {
         super('T', "Rock Thrower - moves toward player and throws rocks up two spaces away from it to damage player", location);
     }
 
+    //Define move behavior for rockthrower. rockthrower will always move towards the player
     @Override
     public void move(Drawable[] gameBoard, int playerLocation) {
         boolean isPlayerToLeft =  playerLocation < getLocation();
@@ -38,6 +47,7 @@ public class RockThrower extends GamePiece implements Moveable {
         }
     }
 
+    //Define interaction behavior when rock thrower location == player location, hit
     @Override
     public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
         if (Math.abs(playerLocation - getLocation()) <= 2) {

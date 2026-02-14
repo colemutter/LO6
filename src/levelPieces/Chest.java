@@ -1,3 +1,11 @@
+/**
+ * Chest Game Piece.
+ *
+ * @author Cole Mutter
+ * @author Van Nguyen
+ *
+ * Purpose: Create Chest class that extends GamePiece, non moveable object but interactable
+ */
 package levelPieces;
 
 import gameEngine.Drawable;
@@ -12,7 +20,7 @@ public class Chest extends GamePiece {
     public Chest( int location) {
         super('c', "Chest - gives player a point", location);
     }
-
+    //Interaction get Point once player location == chest location
     @Override
     public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
         if(playerLocation == getLocation()){

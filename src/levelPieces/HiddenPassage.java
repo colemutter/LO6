@@ -1,3 +1,11 @@
+/**
+ * Hidden Passage Game Piece.
+ *
+ * @author Cole Mutter
+ * @author Van Nguyen
+ *
+ * Purpose: Create class HiddenPassage that extends gamepiece and is Interactable.
+ */
 package levelPieces;
 
 import gameEngine.Drawable;
@@ -13,6 +21,7 @@ public class HiddenPassage extends GamePiece {
         super('H', "Hidden Passage advances player to next level on contact", location);
     }
 
+    //Define interaction behavior when hidden passage location == player location, advance
     @Override
     public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
         if(playerLocation == getLocation()){

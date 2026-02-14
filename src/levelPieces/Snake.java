@@ -1,3 +1,11 @@
+/**
+ * Snake Game Piece.
+ *
+ * @author Cole Mutter
+ * @author Van Nguyen
+ *
+ * Purpose: Create class Snake that extends gamepiece and is Interactable and moveable.
+ */
 package levelPieces;
 
 import gameEngine.Drawable;
@@ -17,6 +25,7 @@ public class Snake extends GamePiece implements Moveable {
         super('s', "Snake - moves randomly and kills player on contact", location);
     }
 
+    //Implement snake movement where it moves rnadomly
     @Override
     public void move(Drawable[] gameBoard, int playerLocation) {
         Random rand = new Random();
@@ -41,6 +50,7 @@ public class Snake extends GamePiece implements Moveable {
         }
     }
 
+    //Define interaction behavior when snake location == player location, kill
     @Override
     public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
         if (playerLocation == getLocation()) {
