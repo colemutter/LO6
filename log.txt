@@ -1,0 +1,55 @@
+commit 99afbd3c0a33d42c0ccb4ea0ace4b04210022a5e
+Author: Your New Name <vann7568@gmail.com>
+Date:   Thu Feb 12 13:43:47 2026 -0700
+
+    Added level 2
+
+commit aef023be0748be9d4f36d584f65ea22c9e4be572
+Merge: 390c0b8 6edab0b
+Author: colemutter <cole.mutter@icloud.com>
+Date:   Thu Feb 12 12:59:10 2026 -0700
+
+    Merge remote-tracking branch 'origin/main'
+
+commit 390c0b8a0f0df34587aa5995bdb970fe3476e171
+Author: colemutter <cole.mutter@icloud.com>
+Date:   Thu Feb 12 12:59:03 2026 -0700
+
+    added interaction to Snake and RockThrower
+
+commit 6edab0b466762aa0e66f54c1e6796de2290481ce
+Merge: 3bb4950 9bac0f6
+Author: Your New Name <vann7568@gmail.com>
+Date:   Thu Feb 12 12:58:33 2026 -0700
+
+    Merge branch 'main' of https://github.com/colemutter/LO6
+
+commit 3bb495044b4bed04716cf4e842f02961f811b89b
+Author: Your New Name <vann7568@gmail.com>
+Date:   Thu Feb 12 12:58:00 2026 -0700
+
+    Added Interaction
+
+commit 9bac0f69dbcb22c0ab44c2e5e69c0d1d615ee324
+Author: colemutter <cole.mutter@icloud.com>
+Date:   Thu Feb 12 12:51:12 2026 -0700
+
+    added movement of snakes and rock throwers
+
+commit e1e738afbf80bd2119f25895276992ae1f4c7103
+Author: colemutter <cole.mutter@icloud.com>
+Date:   Thu Feb 12 12:07:07 2026 -0700
+
+    implemented Level Setup and changes the gameobjects contructors to have labels independant of runtime
+
+commit 9042783ad01deeebafcd98e675180caffbc2dfad
+Author: colemutter <cole.mutter@icloud.com>
+Date:   Tue Feb 10 13:33:38 2026 -0700
+
+    added GameObjects
+
+commit 7924a2d92e5f70be1b4121f8d965bdcf47e3dc38
+Author: colemutter <cole.mutter@icloud.com>
+Date:   Thu Feb 5 13:08:24 2026 -0700
+
+    initial commit

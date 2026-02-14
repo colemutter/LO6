@@ -13,7 +13,7 @@ public class RockThrower extends GamePiece implements Moveable {
      * @param location initial location
      */
     public RockThrower( int location) {
-        super('T', "Rock Thrower - moves toward player and throws rocks two spaces away from it", location);
+        super('T', "Rock Thrower - moves toward player and throws rocks up two spaces away from it to damage player", location);
     }
 
     @Override

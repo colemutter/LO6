@@ -10,7 +10,7 @@ public class HiddenPassage extends GamePiece {
      * @param location initial location
      */
     public HiddenPassage( int location) {
-        super('H', "advances player to next level on contact", location);
+        super('H', "Hidden Passage advances player to next level on contact", location);
     }
 
     @Override

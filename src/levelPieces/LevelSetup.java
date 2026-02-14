@@ -34,11 +34,15 @@ public class LevelSetup {
 
             //Section for pits
 
-
+            SpikePit pit1 = new SpikePit(18);
+            interactablePieces.add(pit1);
+            gameBoard[18] = pit1;
 
             //Section for Dart Traps
 
-
+            DartTrap dartTrap1 = new DartTrap(20);
+            interactablePieces.add(dartTrap1);
+            gameBoard[20] = dartTrap1;
 
             //Section for Chests
             Chest chest1 = new Chest(9);
@@ -46,7 +50,9 @@ public class LevelSetup {
             gameBoard[9] = chest1;
 
             //Section for Hidden Passage
-
+            HiddenPassage hiddenPassage1 = new HiddenPassage(19);
+            interactablePieces.add(hiddenPassage1);
+            gameBoard[19] = hiddenPassage1;
 
 
             //Section for rock Throwers
@@ -59,6 +65,11 @@ public class LevelSetup {
             //prints for rules of items in the level
             System.out.println("  " + new Rock(0));
             System.out.println("  " + snake1);
+            System.out.println("  " + rockThrower);
+            System.out.println("  " + dartTrap1);
+            System.out.println("  " + hiddenPassage1);
+            System.out.println("  " + chest1);
+            System.out.println("  " + pit1);
         } else if (levelNumber == 2) {
             playerPosition = 19;
 
@@ -99,6 +110,13 @@ public class LevelSetup {
             gameBoard[18] = thrower1;
 
             //prints for rules of items in the level
+            System.out.println("  " + new Rock(0));
+            System.out.println("  " + snake1);
+            System.out.println("  " + thrower1);
+            System.out.println("  " + dart1);
+            System.out.println("  " + passage1);
+            System.out.println("  " + chest1);
+            System.out.println("  " + pit1);
         }
 
         System.out.println();

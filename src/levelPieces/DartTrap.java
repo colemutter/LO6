@@ -10,12 +10,13 @@ public class DartTrap extends GamePiece {
      * @param location initial location
      */
     public DartTrap(int location) {
-        super('d', "shoots a dart a certain direction to harm the player", location);
+        super('d', "Dart Trap - shoots a dart exactly two spaces away torword the player", location);
     }
 
     @Override
     public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
-        if(playerLocation == getLocation()){
+        //Hurts player only if they are exactly two tiles away
+        if(Math.abs(playerLocation - getLocation()) == 2){
             return InteractionResult.HIT;
         }else{
             return InteractionResult.NONE;

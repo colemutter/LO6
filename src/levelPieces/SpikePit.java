@@ -10,7 +10,7 @@ public class SpikePit extends GamePiece {
      * @param location initial location
      */
     public SpikePit(int location) {
-        super('p', "kills player if they fall into it", location);
+        super('p', "Spike Pit - kills player if they fall into it", location);
     }
 
     @Override

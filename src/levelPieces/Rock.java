@@ -11,7 +11,7 @@ public class Rock extends GamePiece {
      * @param location initial location
      */
     public Rock(int location) {
-        super('r', "does nothing", location);
+        super('r', "Rock - does nothing", location);
     }
 
     @Override

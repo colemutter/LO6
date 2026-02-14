@@ -10,7 +10,7 @@ public class Chest extends GamePiece {
      * @param location initial location
      */
     public Chest( int location) {
-        super('c', "gives player a point", location);
+        super('c', "Chest - gives player a point", location);
     }
 
     @Override
