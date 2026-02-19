@@ -1,3 +1,11 @@
+/**
+ * Dart Trap Game Piece.
+ *
+ * @author Cole Mutter
+ * @author Van Nguyen
+ *
+ * Purpose: Create class DartTrap that extends gamepiece and is Interactable 
+ */
 package levelPieces;
 
 import gameEngine.Drawable;
@@ -12,7 +20,7 @@ public class DartTrap extends GamePiece {
     public DartTrap(int location) {
         super('d', "Dart Trap - shoots a dart exactly two spaces away torword the player", location);
     }
-
+    //Define interaction behavior when dart trap location == player location, hit
     @Override
     public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
         //Hurts player only if they are exactly two tiles away

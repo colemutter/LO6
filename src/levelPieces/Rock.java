@@ -1,3 +1,11 @@
+/**
+ * Rock Game Piece.
+ *
+ * @author Cole Mutter
+ * @author Van Nguyen
+ *
+ * Purpose: Create class Rock that extends gamepiece. Does nothing
+ */
 package levelPieces;
 
 import gameEngine.Drawable;
@@ -14,6 +22,7 @@ public class Rock extends GamePiece {
         super('r', "Rock - does nothing", location);
     }
 
+    //No interaction w/ game
     @Override
     public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
         return InteractionResult.NONE;
